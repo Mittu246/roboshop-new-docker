@@ -60,4 +60,14 @@ services:
     - rabbitmq
     - cart
     - user
-
+  frontend: 
+    image: srikesh7117/frontend:v1
+    container_name: frontend
+    ports:
+      - "80:80"
+    depends_on:
+    - catalogue
+    - user
+    - cart
+    - shipping
+    - payment
