@@ -1,4 +1,4 @@
-FROM node:20-apline3.21
+FROM node:20-alpline3.21
 WORKDIR /opt/server
 COPY package.json .
 COPY *.js .
